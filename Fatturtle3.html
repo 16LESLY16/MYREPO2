@@ -1,33 +1,80 @@
 <html>
 <head>
 <style>
-.navbar-nav ul li a{
-padding-left:15px;
+
+
+.navbar-nav ul{
+height:100%;
+width:100%;
 }
+
 a.nav-link {
-padding-bottom:50px;
-padding-right:25px;
-}
-.navbar{
-background:none;
+padding-bottom:11px;
+padding-right:35px;
 }
 
 .fill{
+z-index:-5;
 background-size:cover;
-width:102%;
+width:100%;
 height:136%;
- position: fixed;
-  transform: translateY(44%);
+position: relative;
+transform: translateY(16%);
+top:-39%;
+
 }
 
 .img2{
 	background-position:center;
 	background-repeat:no-repeat;
-	margin-top:-35em;
-	margin-left:450px;
-	z-index:1500;
+	margin-top:-102.5em;
+	margin-left:44em;
 }
 
+.btn{
+    height:44px;
+    width:128px;
+    border-width:25px;
+    border-radius:5px;
+    border-color:#fff;
+    background-color:transparent;
+    color:white;
+    margin-left:46em;
+    margin-top:2em;
+    padding:10px 10px;
+    box-shadow:1px 1px 1px black;
+    transition:500ms all;	
+}
+
+.btn:hover{
+    border-color:green;
+    background-color:black;
+    opacity:0.6;
+    filter:Alpha(opacity=60);
+    color:white;
+    box-shadow: 1px 1px 1px black;
+    box-decoration:none;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right,rgba(13,171,37,1)0%,rgba(13,118,51,1)100%);
+    border-radius: 1px;
+}
+
+.h2{
+    margin-left:18em;
+    margin-top:9px;
+    height:38px;
+}
+.h3{
+    margin-left:16em;
+    margin-top:4.5em;
+    height:38px;
+}
 
 .f{
    font-family:'Lato',sans-serif;
@@ -38,15 +85,16 @@ height:136%;
    left:0;
    bottom:0;
    width:100%;
-   height:4%;
+   height:3%;
    background-color:rgba(0, 0, 0, 0.67);
    color:white;
 }
+
 </style>
-<link rel="stylesheet" a href="fonts.googleapis.css"/>
+<link rel="stylesheet"  href="fonts.googleapis.css"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" a href="css/bootstrap.css"/>
+<link rel="stylesheet"  href="css/bootstrap.css"/>
 <script src="js/bootstrap.js"></script>
 </head>
 <body style="line-height:1.42857143">
@@ -65,35 +113,56 @@ height:136%;
 </li>
 <li class="nav-item">
     <a class="nav-link" href="#">HOW IT WORKS</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">SAFETY</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">PRODUCTS</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">CONTACT</a>
-    </li>	
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">SAFETY</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">PRODUCTS</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">CONTACT</a>
+</li>	
 </ul>
-<ul class="navbar-nav"  style="float:right;margin-top:-45px;margin-right:20px;">	
-    <li class="nav-item">
-    <a class="nav-link" href="#" style="border-right:thin #fff solid;margin-top:18px;padding-top:1px;height:20px;">REGISTER</a>
-    </li>	
-    <li class="nav-item">
-    <a class="nav-link" href="#">LOGIN</a>
-    </li>	
+<ul class="navbar-nav"  style="float:right;margin-right:20px; margin-top:-38px;">	
+<li class="nav-item">
+<a class="nav-link" href="#" style="border-right:thin #fff solid;margin-top:18px;padding-top:1px;height:20px;">REGISTER</a> 
+</li>	
+<li class="nav-item">
+<a class="nav-link" href="#">LOGIN</a>
+</li>	
 </ul>
 </nav>
-<div class="fill" style="background-image:url('herbs_bg.jpg')"></div>
-<div class="container">
+<div class="fill" style="background-image:url('herbs_bg.jpg');"></div>
+<header id="HOME" class="container-fluid">
 <div class="img2">
-<img src="FatTurtleLogo.png" alt="Logo" style="width:170px;height:162.28px;"/>
+<img src="FatTurtleLogo.png" alt="Logo" style="width:170px;height:162.28px;z-index:100;margin-top:46em;"/>
 </div>
 </div>
+<h2 class="h2" style="font-family:'Lato',sans-serif;font-weight:400; font-size:38px;color:White">FAT TURTLE</h2>
+<div>
+<button type="button" align="center" class="btn" style="border:1px #fff solid; text-shadow: 1px 1px black;font-family:'Lato',sans-serif;">REGISTER</button>
+</div>
+<div>
+<h3 class="h3" style="font-family:'Lato',sans-serif;font-weight:400;font-style:bold; font-size:32px; text-shadow: 1px 1px black;color:White;padding-top:7px;">Your Full Service Chinese Herbal Pharmacy</h3>
+</header>
+<div id="what-we-do" class="container-fluid" style="margin-top:30em;text-align:center;">
+<h4 class="heading" style="font-weight:500;line-height:38px;font-size:38px;color:#4d4d4d;font-family:'Lato',sans-serif;padding-bottom:2px;">Welcome to the Family</h4>
+<hr style="width:100px;margin-top:0px;size:30px;border-color:black;">
+<br>
+<div class="im" >
+<img src="SpringWindDispensary_logo.png" width="150px" height="141.67px"/></div>
+<h4 style="font-style:strong;font-size:22px;font-weight:700;text-align:center;font-family:'Lato',sans-serif;color:#4d4d4d;"> Spring Wind Dispensary</h4>
+<p style="margin-right:11em;margin-left:11em;font-size:22px;display: block;
+    line-height:1.8em;font-weight:100;text-align:center;font-family:'Lato',sans-serif;color:#4d4d4d;line-height:1.8em;font-style:smooth;">Founded by Andrew Ellis over 20 years ago, Spring Wind Dispensary sources only the highest quality herbs from around the globe. We are honored to welcome Spring Wind Dispensary into our family.</p>
+<br>
+<p style="margin-right:11em;margin-left:11em;font-size:22px;display: block;
+    line-height:1.8em;font-weight:100;text-align:center;font-family:'Lato',sans-serif;color:#4d4d4d;font-style:smooth;">Set up a practitioner account online to access everything that both pharmacies provide.</p>
+</div>
+<br><br><br>
 <footer class="f" style="font-family:'Lato',sans-serif;text-align:right;padding-right:15px;font-size:12px;">
-<a href="#top" style="text-decoration:none;padding-top:2px;color:white;float:left;margin-left:5px;">To top</a>
-<span style="text-align:right;margin-left:-8px">Copyright © 2018 Fat Turtle Herb Company(310.691.5226)</span>
+<a href="#top" style="text-decoration:none;padding-top:0px;color:white;float:left;margin-left:5px;">To top</a>
+<span style="text-align:right;margin-right:-8px;">Copyright © 2018 Fat Turtle Herb Company(310.691.5226)</span>
 </footer>
 </body>
 </html>
